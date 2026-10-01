@@ -6,6 +6,7 @@ from nltk.stem.porter import PorterStemmer
 @st.cache_resource
 def download_nltk():
     nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
 
 download_nltk()
 ps = PorterStemmer()
